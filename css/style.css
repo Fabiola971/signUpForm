@@ -9,30 +9,102 @@
 a{
     text-decoration: none;
     color: rgb(255, 96, 98);
+    font-weight: 700;
 }
 
 article:first-of-type, button, article:last-of-type p{
     color: rgb(255, 255, 255);
 }
 
-article:last-of-type p{
-    background-color: rgb(74, 60, 148);
-}
-
 body{
     font-family: "Poppins", sans-serif;
     background: url(../images/bg-intro-desktop.png)  rgb(255, 96, 98);
-    background-size: 100%;
+    background-size: 480%;
+    background-position: right center;
   }
 
-button{
-    background-color: rgb(43, 198, 117);
-
+main{
+    margin: 20px;
 }
 
+/************************** PRESENTATION ***************************/
+h1{
+    padding-inline: 50px;
+}
+
+.presentation{
+    text-align: center;   
+}
+
+.presentation p{
+    margin-top: 20px;
+}
+
+.presentation span{
+    margin-left: 20px;
+}
+
+/************************* FORM CONTAINER **************************/
 form{
     background-color: rgb(255, 255, 255);
+    box-shadow: 0.5px 8px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+form button{
+    background-color: rgb(43, 198, 117);
+    text-transform: uppercase;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-bottom: 5px solid  rgb(48, 164, 104);
+    margin-bottom: 15px;
+}
+
+form input{
+    border: 1px solid  hsl(246, 25%, 77%);
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+form:last-child p{
+    color: hsl(246, 25%, 77%);
+    font-size: 13px;
+    text-align: center;
+}  
+
+.formContainer p:first-child{
+    text-align: center;
+    background-color: rgb(74, 60, 148);
+    box-shadow: 0.5px 8px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px 50px;
+    margin: 50px 0 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.formContainer span, input::placeholder{
+    font-weight: 700;
 }
 
   @media screen and (min-width:1440px) {
